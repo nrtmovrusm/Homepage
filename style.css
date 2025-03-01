@@ -1,0 +1,430 @@
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 40px;
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+    margin: 0;
+}
+
+.header-bground-container {
+    width: 100%;
+    background: linear-gradient(150deg, 
+    rgba(10,145,177,255) 50%,
+    transparent 50%);
+    background-size: 100% 50%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.header-photo {
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.header-name {
+    position: absolute;
+    top: 49%;
+    left: 12%;
+    z-index: 1;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+
+.header-body {
+    font-family: 'Roboto', serif;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin-top: -20px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6;
+    margin-bottom: 80px;
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.project-screenshot-placeholder {
+    background-color: var(--card-bg-color, rgba(124,117,202,255));
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: white;
+    padding: 100px 20px;
+}
+
+.project-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+
+.card {
+    width: 30px;
+}
+
+.project-title {
+    font-size: 35px;
+}
+
+.project-body {
+    font-family: 'Roboto', serif;
+    font-size: 25px;
+    padding-bottom: 80px;
+}
+
+.card-container {
+    margin: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.orange {
+    --card-bg-color: rgba(215,143,57,255);
+}
+
+.project-screenshot-placeholder.green {
+    --card-bg-color: rgba(94,143,77,255);
+}
+
+.project-screenshot-placeholder.pink {
+    --card-bg-color: rgba(196,99,180,255);
+}
+
+.project-screenshot-placeholder.blue {
+    --card-bg-color: rgba(75,162,210,255);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(10,145,177,255);
+    color: white;
+    font-weight: normal;
+    font-family: 'Roboto', serif;
+    justify-content: space-between;
+}
+
+.h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    padding-top: 30px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer-icon {
+    width: 40px;
+}
+
+.footer-image-container {
+}
+
+.footer-pic {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    height: 400px;
+}
+
+/* Tablet styles between 500px and 1000px */
+@media (min-width: 500px) and (max-width: 1000px) {
+    .header-bground-container {
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(165deg, 
+        rgba(10,145,177,255) 50%,
+        transparent 50%);
+        background-size: 100% 160%;
+        background-position: 0% 10%;
+        position: relative;
+        z-index: 0;
+        display: block;
+    }
+    
+    .header-photo {
+        max-width: 100%;
+        width: 380px;
+        height: 400px;
+        /* width: 400px;
+        height: 350px; */
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+        transform: translateY(-30px);
+        object-fit: cover;
+        float: left;
+        z-index: 2; 
+    }
+    
+    .image-container {
+        float: left;
+        max-height: 400px;
+        /* max-width: 100%; */
+        width: 400px;
+        height: 400px;
+        left: 0%;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .header-name {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        z-index: 2;
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .header-text {
+        display: block;
+        position: relative;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+        padding: 20px 20px;
+        margin: 50px;
+        margin-bottom: 40px;
+        z-index: 1;
+        margin-top: 100px;
+        background-color: white;
+    }
+
+    .header-body {
+        font-size: 18px;
+    }
+
+    .header-icons {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 200px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-heading {
+        display: grid;
+        grid-column-start: 1;
+        grid-column: span 2;
+        justify-content: left;
+        margin-left: 16px;
+        margin-bottom: 2px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        max-height: 400px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .footer-icons {
+        align-items: left;
+        justify-content: left;
+    }
+
+    .footer-image-container {
+        overflow: hidden;
+    }
+}
+
+/* Computer / larger screens */
+@media (min-width: 1001px) {
+
+    .header-icons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .header-bground-container {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        justify-content: start;
+        background: linear-gradient(165deg, 
+        rgba(10,145,177,255) 50%,
+        transparent 50%);
+        background-size: 100% 140%;
+        background-position: 0% 10%;
+    }
+
+    .image-container {
+        width: 350px;
+        min-width: 350px;
+        overflow: hidden;
+        max-height: 500px;
+        margin-left: 10%;
+    }
+
+    .header-photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: 600px;
+    }
+
+    .header-text {
+        display: flex;
+        align-items: start;
+        justify-content: left;
+        background-color: white;
+        position: absolute;
+        top: 80px;
+        left: 39.7%;
+        width: 650px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .header-body {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .section-heading {
+        padding-left: 23px;
+    }
+
+    .header-icons {
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-left: auto;
+        padding: 20px;
+    }
+
+    .header-name {
+        position: absolute;
+        top: 83%;
+        left: 13%;
+        font-size: 3rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 100px;
+    }
+
+    .section-heading {
+        display: grid;
+        grid-column-start: 1;
+        grid-column: span 3;
+        justify-content: left;
+        margin-left: 0px;
+        margin-bottom: 2px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        max-height: 400px;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    .footer-icons {
+        align-items: left;
+        justify-content: left;
+    }
+
+    .footer-image-container {
+        overflow: hidden;
+    }
+}
